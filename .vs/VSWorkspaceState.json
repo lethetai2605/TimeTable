@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\TKB",
-    "\\TKB\\Controllers"
+    "\\TKB\\Controllers",
+    "\\TKB\\Views",
+    "\\TKB\\Views\\Friday"
   ],
-  "SelectedNode": "\\TKB\\Controllers\\HomeController.cs",
+  "SelectedNode": "\\TKB\\Views\\Friday\\Details.cshtml",
   "PreviewInSolutionExplorer": false
 }
