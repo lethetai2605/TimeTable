@@ -34,12 +34,19 @@
                     <div class="panel-body">
                         @using (Html.BeginForm("Login", "Login", FormMethod.Post))
                         {
-                            @Html.ValidationSummary(false, "", new { @class = "text-danger" });
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger", @style = "color: red" });
+                            <style>
+                                ul{
+                                    list-style-type: none;
+                                }
+                            </style>
                             <fieldset>
                                 <div class="form-group">
+                                    @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger", @style = "color-red" })
                                     @Html.TextBoxFor(model => model.UserName, new { @class = "form-control", @autofocus = "autofocus" })
                                 </div>
                                 <div class="form-group">
+                                    @Html.ValidationMessageFor(model => model.PassWord, "", new { @class = "text-danger", @style = "color-red" })
                                     @Html.PasswordFor(model => model.PassWord, new { @class = "form-control" })
                                 </div>
                                 <div class="checkbox">
